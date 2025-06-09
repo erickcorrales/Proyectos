@@ -1,0 +1,177 @@
+body {
+    height: 100vh;
+    color: rgb(15, 1, 1);
+    background: linear-gradient(to bottom, rgb(235, 229, 229), rgb(212, 196, 196));
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedor-principal {
+    flex: 1;
+}
+
+/* Estilo cabezera */
+#header {
+    display: flex;
+    background: linear-gradient(to right, rgb(40, 40, 241), skyblue);
+    border-radius: 10px;
+    width: 98%;
+    height: 5%;
+    margin: auto;
+    padding: 0px 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+#titulo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Barra de navegacion */
+#barra-navegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    width: 20%;
+    height: 90%;
+}
+
+#container-botones {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 80%;
+    padding: 5px;
+}
+
+.btn-cuenta {
+    width: 45%;
+}
+
+.btn-cuenta:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#btn-registro {
+    border-radius: 10px;
+    font-weight: bold;
+    background: linear-gradient(to right, #4facfe, #00f2f2);
+
+}
+
+#btn-inicio-sesion {
+    border-radius: 10px;
+    font-weight: bold;
+    background: linear-gradient(to right, #0d910d, #00f20c);
+}
+
+
+
+/*****************************************************************************************/
+/* Separacion de seccion y header */
+
+.separacion {
+    width: 100%;
+    border: solid skyblue 0.5px;
+}
+
+/*****************************************************************************************/
+
+
+
+/* Estilo seccion de categorias */
+#seccion-categoria {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#div-categorias {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    height: 300px;
+    width: 80%;
+    padding: 0px 5px;
+}
+
+.categorias {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100px !important;
+    height: 50% !important;
+    color: white;
+    background-size: 99%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 5px 0px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.623);
+}
+
+.categorias:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgb(133, 154, 224);
+    color: black;
+    font-weight: bold;
+}
+
+#categoria-deportes {
+    background-image: 
+    url("../assets/icons/sports_game_sport_ball_soccer_football_icon_209369.ico"),
+    linear-gradient(to right, rgb(90, 4, 202),  rgb(88, 77, 240));
+}
+
+#categoria-ciencias {
+    background-image: 
+    url("../assets/icons/education_science_laboratory_icon_149713.ico"),
+    linear-gradient(to right, rgb(202, 4, 202),  rgb(228, 93, 233));
+}
+
+#categoria-cultura {
+    background-image: 
+    url("../assets/icons/sidebar_sites_earth_world_globe_20458.ico"),
+    linear-gradient(to right, rgb(14, 12, 14),  rgb(58, 57, 63));
+}
+
+#categoria-anime {
+    background-image:
+    url("../assets/icons/Luffys_flag_icon-icons.com_76118.ico"),
+    linear-gradient(to right, rgb(3, 87, 35),  rgb(35, 185, 42));
+}
+
+#categoria-matematicas {
+    background-image: 
+    url("../assets/icons/3592863-accounting-calculate-calculation-calculator-general-math-office_107744.ico"),
+    linear-gradient(to right, rgb(136, 34, 9),  rgb(228, 60, 38));
+}
+
+#categoria-cine {
+    background-image: url("../assets/icons/cinema_12223.ico"),
+    linear-gradient(to right, rgb(7, 104, 160),  rgb(29, 14, 245));
+}
+
+
+/**********************************************************************************/
+/* Footer */
+/**********************************************************************************/
+
+#pie-pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(54, 48, 48), rgb(66, 62, 52));
+    color: white;
+}
