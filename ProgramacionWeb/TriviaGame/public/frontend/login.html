@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrarse</title>
+    <title>Log in - Trivia Game</title>
 
-    <link rel="stylesheet" href="css/registro.css">
-    <script src="ts-js/registro.js"></script>
+    <link rel="stylesheet" href="css/signup-login.css">
+    <script src="ts-js/login.js" type="module"></script>
 </head>
 <body>
     <main id="main">
         <section id="seccion-principal">
-            <div id="container-login">
-                <h2 id="title">Sign up</h2>
-                <p id="text-login">Crea una cuenta o <a href="login.html">Log in</a></p>
-                <form id="form-sign-up">
-                    <p class="text email">Email address</p>
-                    <input type="email" name="email" required class="text-box email">
+            <div id="container-data">
+                <h2 id="title">Log in</h2>
+                <p class="text-header" id="text-signup">Or <a href="signup.html">Create an account</a></p>
+                <form id="form">
                     <p class="text username">Username</p>
                     <input type="text" name="username" required class="text-box username">
                     <p class="text password">Password</p>
                     <input type="password" name="password" required class="text-box password">
-                    <input type="button" id="btn-send" name="send" value="Sign up">
+                    <input type="submit" id="btn-send-login" name="send-login" value="Log in">
                 </form>
             </div>
         </section>

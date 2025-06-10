@@ -31,12 +31,16 @@ body {
     font-weight: bold;
 }
 
+#user {
+    display: none;
+}
+
 /* Barra de navegacion */
 #barra-navegacion {
     display: flex;
     justify-content: space-around;
     align-items: center;    
-    width: 20%;
+    width: 25%;
     height: 90%;
 }
 
@@ -69,6 +73,13 @@ body {
     border-radius: 10px;
     font-weight: bold;
     background: linear-gradient(to right, #0d910d, #00f20c);
+}
+
+#btn-cerrar-sesion {
+    display: none;
+    border-radius: 10px;
+    font-weight: bold;
+    background: linear-gradient(to right, #d15c18, #9b2602);
 }
 
 

@@ -1,0 +1,14 @@
+Para ejecutar el codigo es necesario:
+
+correr el servidor (node, python, php, etc) en una terminal
+
+correr la visualizacion en otro puerto (en el caso de node (servidor) usa el puerto 3000)
+entonces es necesario correr el front en otro puerto, en este caso use:
+
+php -S localhost:8000 -t public/frontend
+
+public-frontend es donde se ecuentran los archivos del front, este puerto corre en otra terminal
+
+Tambien hay que compilar los archivos ts para traducirlos a js, para eso en otra terminal se usa:
+tsc --watch, de este modo lo hace automaticamente al guardar algun cambio en alguno de los archivos ts del
+proyecto, hay que ejecutar esto en la raiz del proyecto

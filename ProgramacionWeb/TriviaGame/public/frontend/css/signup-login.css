@@ -32,7 +32,7 @@ body {
     /* border: solid blue; */
 }
 
-#container-login {
+#container-data {
     display: flex;
     flex-direction: column;
     width: 99%;
@@ -45,7 +45,7 @@ body {
     margin: 0px 150px;
 }
 
-#form-sign-up {
+#form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,9 +60,10 @@ body {
 
 }
 
-#text-login {
+.text-header {
     font-size: small;
     margin: 5px 150px;
+    width: 50%;
 }
 
 .text-box {
@@ -84,6 +85,25 @@ body {
 }
 
 #btn-send:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+
+
+/* Login */
+
+#btn-send-login {
+    width: 50%;
+    height: 10%;
+    margin: auto;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(5, 100, 56), rgb(41, 223, 66));
+}
+
+#btn-send-login:hover {
     cursor: pointer;
     transform: scale(1.05);
 }
