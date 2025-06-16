@@ -113,7 +113,7 @@ const server =  http.createServer(async (req, res) => {
             'set-cookie': 'user=; Max-Age=0; Path=/'
         })
         res.end(JSON.stringify({ message: 'Sesion Cerrada'}))
-    
+
         // Ruta verificar sesion iniciada
     } else if (req.method === 'GET' && req.url === '/check-auth') {
         
@@ -150,7 +150,6 @@ process.on('SIGINT', async () => {
         console.log('Conexion cerrada...')
         process.removeAllListeners('SIGINT')
         process.exit(0)
-    
     } catch (err) {
         if (err instanceof Error)
             console.log('Error al cerrar la conexion a la base de datos...', err.message)

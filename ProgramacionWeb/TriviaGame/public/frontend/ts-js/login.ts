@@ -6,6 +6,7 @@ async function startLogIn() {
 
     try {
         const authCheck = await fetch('http://localhost:3000/check-auth', {
+            method: 'GET',
             credentials: 'include'
         })
 
@@ -43,7 +44,7 @@ async function startLogIn() {
 
             const result = await response.json()
 
-            alert(result.message)
+            // alert(result.message)
 
             form.reset()
 

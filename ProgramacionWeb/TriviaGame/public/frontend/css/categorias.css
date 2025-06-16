@@ -1,0 +1,147 @@
+body {
+    height: 100vh;
+    color: rgb(15, 1, 1);
+    background: linear-gradient(to bottom, rgb(235, 229, 229), rgb(212, 196, 196));
+    display: flex;
+    flex-direction: column;
+}
+
+#contenedor-principal {
+    flex: 1;
+}
+
+/* Estilo cabezera */
+#header {
+    display: flex;
+    background: linear-gradient(to right, rgb(40, 40, 241), skyblue);
+    border-radius: 10px;
+    width: 98%;
+    height: 5%;
+    margin: auto;
+    padding: 0px 5px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+#titulo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Barra de navegacion */
+#barra-navegacion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    width: 25%;
+    height: 90%;
+}
+
+#container-botones {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 80%;
+    padding: 5px;
+}
+
+.btn-cuenta {
+    width: 45%;
+}
+
+.btn-cuenta:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#btn-registro {
+    border-radius: 10px;
+    font-weight: bold;
+    background: linear-gradient(to right, #4facfe, #00f2f2);
+
+}
+
+#btn-inicio-sesion {
+    border-radius: 10px;
+    font-weight: bold;
+    background: linear-gradient(to right, #0d910d, #00f20c);
+}
+
+#btn-cerrar-sesion {
+    display: none;
+    border-radius: 10px;
+    font-weight: bold;
+    background: linear-gradient(to right, #d15c18, #9b2602);
+}
+
+
+
+/*****************************************************************************************/
+/* Separacion de seccion y header */
+
+.separacion {
+    width: 100%;
+    border: solid skyblue 0.5px;
+}
+
+/*****************************************************************************************/
+
+
+
+/* Estilo seccion de categorias */
+#seccion-categoria {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#div-categorias {
+    display: none;
+}
+
+.categorias {
+    display: none;
+}
+
+#categoria-deportes {
+    display: none;
+}
+
+#categoria-ciencias {
+    display: none;
+}
+
+#categoria-cultura {
+    display: none;
+}
+
+#categoria-anime {
+    display: none;
+}
+
+#categoria-matematicas {
+    display: none;
+}
+
+#categoria-cine {
+    display: none;
+}
+
+
+/**********************************************************************************/
+/* Footer */
+/**********************************************************************************/
+
+#pie-pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(54, 48, 48), rgb(66, 62, 52));
+    color: white;
+}

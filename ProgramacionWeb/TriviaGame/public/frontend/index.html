@@ -7,7 +7,7 @@
 
     <title>Trivia Game</title>
 
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" id="hoja-estilos">
     <script src="ts-js/main.js" type="module"></script> 
 </head>
 <body>
@@ -32,15 +32,15 @@
     <!-- Contenido principal de la pagina inicial -->
     <main id="contenedor-principal">
         <section id="seccion-categoria">
-            <h2>Selecciona una categoría</h2>
+            <h2 id="titulo-categorias">Selecciona una categoría</h2>
             <br><br>
             <div id="div-categorias">
-                <div id="categoria-deportes" class="categorias">Deportes</div>
-                <div id="categoria-cine" class="categorias">Cine</div>
-                <div id="categoria-ciencias" class="categorias">Ciencias</div>
-                <div id="categoria-cultura" class="categorias">Cultura</div>
-                <div id="categoria-matematicas" class="categorias">Matemáticas</div>
-                <div id="categoria-anime" class="categorias">Anime</div>
+                <div data-categoria="Deportes" id="categoria-deportes" class="categorias">Deportes</div>
+                <div data-categoria="Cine" id="categoria-cine" class="categorias">Cine</div>
+                <div data-categoria="Ciencias" id="categoria-ciencias" class="categorias">Ciencias</div>
+                <div data-categoria="Cultura" id="categoria-cultura" class="categorias">Cultura</div>
+                <div data-categoria="Matemáticas" id="categoria-matematicas" class="categorias">Matemáticas</div>
+                <div data-categoria="Anime" id="categoria-anime" class="categorias">Anime</div>
             </div>
         </section>
     </main>

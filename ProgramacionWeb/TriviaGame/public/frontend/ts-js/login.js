@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', startLogIn, false);
 async function startLogIn() {
     try {
         const authCheck = await fetch('http://localhost:3000/check-auth', {
+            method: 'GET',
             credentials: 'include'
         });
         const result = await authCheck.json();
@@ -31,7 +32,7 @@ async function startLogIn() {
                 credentials: 'include' // Necesario para recibir cookies
             });
             const result = await response.json();
-            alert(result.message);
+            // alert(result.message)
             form.reset();
             location.href = 'index.html';
         }
